@@ -38,6 +38,7 @@ html,body{
 .aboutme{
     display: grid;
     align-items: center;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas: 
     'photo title title'
     'photo text text';
@@ -46,11 +47,8 @@ html,body{
 }
 .aboutme-photo{
     grid-area: photo;
-    width: fit-content;
-    height: 100%;
     overflow: hidden;
-    /* border: solid 1px red; */
-    border-radius: 50% / 40%; 
+    border-radius: 50%;
     margin: auto;
 }
 
@@ -74,11 +72,11 @@ html,body{
 }
 
 .skill{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 10rem 2rem;
+    display: flex;
+    justify-content: center;
+    /* padding: 0 10rem 2rem; */
     font-size: 3rem;
-    gap: 4rem;
+    /* gap: 30rem; */
     
 }
 .skill ul{
@@ -96,15 +94,21 @@ html,body{
     width: 5rem;
 }
 
-.skill summary{
+.skill details{
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
+    align-items: center;
     /* border: solid 1px red; */
 }
+.skill summary{
+    margin: 0 20rem 10rem;
+}
+
 .skill summary img{
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 10rem;
+    width: 10rem;
+    
     
 }
 
