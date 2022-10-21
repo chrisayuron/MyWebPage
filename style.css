@@ -129,7 +129,15 @@ html,body{
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
+    transition: all 1s ease;
 }
+
+.social-media a:hover img{
+        height:4rem;
+        width: 4rem;
+        transition: all 1s ease;
+}
+
 
 .contactme{
     width: 100%;
