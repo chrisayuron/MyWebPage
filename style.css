@@ -24,16 +24,28 @@ html,body{
 .navigationbar-item{
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
     padding: 0.5rem;
     font-size: 2rem;
+   
 }
+
 .navigationbar-item a{
     text-decoration: none;
+    font-weight: 600;
     color: #000;
+    transition: all 0.5s ease;
+    
     
 }
+
+.navigationbar-item a:hover{
+        font-size: 4rem;
+        transition: all 0.5s ease;
+}
+
 
 .aboutme{
     display: grid;
@@ -121,6 +133,7 @@ html,body{
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius: 1rem;
     gap: 1rem;
     
@@ -129,36 +142,49 @@ html,body{
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .social-media a:hover img{
-        height:4rem;
-        width: 4rem;
-        transition: all 1s ease;
+        height:6rem;
+        width: 6rem;
+        transition: all 0.5s ease;
 }
 
 
 .contactme{
     width: 100%;
-    height: 3rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    font-size: 2rem;
-    gap: 3rem;
-    margin-bottom: 20px;
-    
+    padding: 1rem;
+    font-size: 3rem;
+    gap: 20rem;
+    /* margin-bottom: 20px; */
+  
     
 }
 .contactme a{
     text-decoration: none;
     color: #fff;
-    margin: 0 1.5rem;
- 
+    margin: 0 1rem;
+    transition: all 1s ease;
 }
-
-
+.contactme p{
+        /* background-color: rgba(0, 0, 0, 0.856); */
+        color: #fff;
+        transition: all 1s ease;
+        display: flex;
+        align-items: center;
+}
+.contactme p:hover{
+        background-color: rgba(255, 255, 255, 0.617);
+        color: rgba(0, 0, 0, 0.856);
+        font-size: 4rem;
+        padding: 3.5rem;
+        transition: all 1s;
+        border-radius: 3rem;
+}
 
 .carousel-item p{
     background-color: rgba(0, 0, 0, 0.856);
@@ -317,4 +343,5 @@ html,body{
   footer{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.856);
+    padding: 2rem;
   }
